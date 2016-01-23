@@ -6,10 +6,10 @@ docker pull audiohacked/terraria:stable
 
 It's highly recommended to run a data container:
 ```
-docker run --name terraria_data audiohacked/terraria:stable
+docker run --name terraria_data audiohacked/terraria:stable true
 ```
 
-Then, pull and run the server container:
+Then, run the server container:
 ```
 docker run -dit --name terraria \
     --volumes-from terraria_data \
