@@ -2,9 +2,8 @@
 FROM audiohacked/steamcmd:jessie
 MAINTAINER Sean Nelson <audiohacked@gmail.com>
 
-ARG BASE_URL="http://terraria.org/server/terraria-server-linux-1308.tar.gz"
-ARG TERRARIA_SERVER_PATH
-ENV TERRARIA_SERVER_PATH    ${TERRARIA_SERVER_PATH:-"terraria-server-linux-1308"}
+ENV BASE_URL                http://terraria.org/server/terraria-server-linux-1308.tar.gz
+ENV TERRARIA_SERVER_PATH    terraria-server-linux-1308
 ENV SERVER_NAME             "Terraria Linux Server"
 ENV SERVER_PORT             7777
 ENV SERVER_PLAYERS          6
